@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap');
+
 body {
-  font: normal 16px Arial, Verdana, Serif;
+  font-size: 16px;
+  font-family: 'Baloo 2', cursive;
   background-color: #282a2d;
   color: #a4a6a8;
 }
@@ -47,6 +50,22 @@ body {
 }
 .cont-home {
   justify-content: center;
+  margin-top: 100px;
+  width: 50%;
+}
+.cont-home h1::after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .8s infinite;
+}
+@keyframes pisca{
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
 }
 #sobre {
   display: flex;
@@ -58,8 +77,8 @@ body {
 }
 
 .content {
-  height: 50%;
-  max-width: 500px;
+  max-height: 100%;
+  max-width: 50%;
   justify-items: center;
 }
 
@@ -68,6 +87,7 @@ body {
   padding-top: 50px;
   flex-direction: column;
 }
+
 .content p {
   flex-direction: column;
   text-align: start;
@@ -76,11 +96,8 @@ body {
   max-width: 700px;
 }
 
-.profile-photo {
-  display: flex;
-}
 .profile-photo img {
-  height: 22rem;
+  height: 27rem;
   border-radius: 50%;
   border: solid #9536f6;
   transition: ease-in-out 0.3s;
@@ -93,7 +110,10 @@ body {
 .projetos {
   padding: 100px;
 }
-
+.projetos-itens {
+  margin: auto;
+  max-width: 1200px;
+}
 .projetos a {
   text-align: center;
   color: #9536f6;
@@ -119,8 +139,7 @@ button {
 button:hover {
   background-color: #363636;
 }
-
-.github-link {
+.hab-button {
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 93px;
@@ -129,6 +148,9 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 35px;
+}
+.hab-button a {
+  align-items: center;
 }
 
 .github-link a {
@@ -151,17 +173,24 @@ button:hover {
   cursor: pointer;
   overflow: hidden;
   transition: ease-in-out 0.3s;
+  border: solid 5px #9536f6;
 }
 
-.pro div p {
+
+.pro img:hover {
+  width: 300px;
+}
+
+.pro p {
   font-family: Arial, Verdana, Serif;
   font-size: 20px;
   color: #c4c4c4;
+  margin: 0;
 }
 
 .pro:hover {
   letter-spacing: 5px;
-  color: #aa88ff;
+  border: solid 5px rgb(49, 223, 6);
 }
 
 .pro .breve {
@@ -172,11 +201,24 @@ button:hover {
   border-radius: 20px;
   transform: rotate(-50deg);
 }
+.js-esconde div.escondido {
+  animation: show 1s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 .escondido {
-  opacity: 0;
+
   display: none;
-  transition: 1000ms;
 }
 
 .projetos-itens {
@@ -186,11 +228,11 @@ button:hover {
   width: 100%;
   justify-content: center;
 }
-.pro img{
+.pro img {
   max-width: 100%;
 }
-.habilidades{
-  height: 700px;
+.habilidades {
+  max-height: 100%;
 }
 .habilidades h2 {
   padding-bottom: 70px;
@@ -206,26 +248,31 @@ button:hover {
   flex-wrap: wrap;
   gap: 10px;
   list-style-type: none;
- border-right: solid 4px #9536f6;
+  border-right: solid 4px #9536f6;
 }
 .hab-content {
   display: flex;
   justify-content: center;
   gap: 40px;
-
 }
 
-.hab-content img{
+.hab-content img {
   cursor: pointer;
 }
 .habilidades-descricao section {
   width: 500px;
-  font: normal 16px Arial, Verdana, Serif;
+}
+.html .ativo img{
+content: url('../img/html-5-re.png');
+}
 
+.css .ativo img{
+ content: url('../img/html-5-re.png');
 }
 
 #contatos {
   background-color: #2b2d30;
+  height: 800px;
 }
 #contatos h1 {
   text-align: center;
@@ -258,6 +305,7 @@ footer {
   align-items: center;
   list-style-type: none;
   background-color: #9536f6;
+  color: #f5f5f5;
 }
 
 @media (max-width: 800px) {
@@ -300,4 +348,19 @@ footer {
 .js-tabcontent section.ativo {
   display: block !important;
   animation: show 0.5s forwards;
+}
+
+
+.js .js-scroll{
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+
+}
+
+.js .js-scroll.ativo{
+  opacity: 1;
+  transition: .3s;
+  transform: translate3d(0, 0, 0);
+
 }
