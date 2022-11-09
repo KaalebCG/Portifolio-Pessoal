@@ -12,53 +12,51 @@
 
 <body>
   <nav class='menu js-menu'>
-    <h1> &lt; KGD &gt; </h1>
-    <ul>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#sobre">SOBRE</a></li>
-      <li><a href="#projetos">PROJETOS</a></li>
-      <li><a href="#habilidades">HABILIDADES</a></li>
-      <li><a href="#contatos">CONTATO</a></li>
+    <h1 class="menu__titulo"> &lt; KGD &gt; </h1>
+    <ul class="menu__lista">
+      <li><a href="#home" class="menu__link">HOME</a></li>
+      <li><a href="#sobre" class="menu__link">SOBRE</a></li>
+      <li><a href="#projetos" class="menu__link">PROJETOS</a></li>
+      <li><a href="#habilidades" class="menu__link">HABILIDADES</a></li>
+      <li><a href="#contatos" class="menu__link">CONTATO</a></li>
     </ul>
   </nav>
 
-  <section id="home" class="js-scroll">
+  <section class="js-scroll home">
     <div class="cont-home">
-      <h2>Olá me chamo </h2><h1>Kaleb Gaioto Damaceno! </h1><h2>Desenvolvedor Front-End.</h2>
+      <h2 class="home__titulo-secundario">Olá me chamo </h2>
+      <h1 class="home__titulo">Kaleb Gaioto Damaceno! </h1>
+      <h2 class="home__titulo-secundario">Desenvolvedor Front-End.</h2>
       </h1>
     </div>
-    <div class="profile-photo"><img src="./img/perfil.jpg" alt="">
-    </div>
-
+    <img class="home__imagem" src="./img/perfil.jpg" alt="">
   </section>
 
-  <section id="sobre" class="js-scroll">
-
-    <div class="profile-photo"><img src="./img/icon-kaleb.png" alt="">
+  <section class="js-scroll">
+    <div class="sobre">
+      <img src="./img/icon-kaleb.png" class="sobre__imagem" alt="">
+      <div class="sobre__conteudo">
+        <h1 class="sobre__titulo">Oi me chamo Kaleb!</h1>
+        <p class="sobre__paragrafo"> Estudante de Engenharia de Software na Universidade Estácio de Sá, Mantenho interesse na área de desenvolvimento front-end e tecnologia, sempre buscando novas tecnologias e me desenvolver pessoalmente e profissionalmente.</p>
+        <p class="sobre__paragrafo"> Atualmente realizando a tao sonhada transição de carreira, seguindo focado na área de desenvolvimento, minha experiência foi voltada para área de tecnologia industrial, sempre focando em boas praticas e desenvolvimento, efetuei implantação de melhorias, coordenação de equipe e organização. </p>
+        <p class="sobre__paragrafo"> fique avontade para me chamar para um café e conhecer melhor meus projetos <a href="#projetos">⯆</a> </p>
+      </div>
     </div>
-
-    <div class="content">
-      <h1>Oi me chamo Kaleb!</h1>
-     <p> Estudante de Engenharia de Software na Universidade Estácio de Sá, Mantenho interesse na área de desenvolvimento front-end e tecnologia, sempre buscando novas tecnologias e me desenvolver pessoalmente e profissionalmente.</p>
-
-    <p>  Atualmente realizando a tao sonhada transição de carreira, seguindo focado na área de desenvolvimento, minha experiência foi voltada para área de tecnologia industrial, sempre focando em boas praticas e desenvolvimento, efetuei implantação de melhorias, coordenação de equipe e organização. </p>
-
-      <p> fique avontade para me chamar para um café e conhecer melhor meus projetos <a href="#projetos">⯆</a> </p>
+    <div class="curriculo">
+      <a href=""><button>Baixe meu curriculo</button></a>
     </div>
-
-
   </section>
 
-  <section id="projetos" class="js-scroll">
+  <section class="js-scroll projetos">
     <div class="projetos">
-      <h2>Projetos</h2>
+      <h2 class="projetos__titulo">Projetos</h2>
 
       <div class="projetos-itens">
         <div>
           <div class="pro">
-            <a href="https://github.com/KaalebCG/Animais-Fantasticos"> <img src="https://cdn.discordapp.com/attachments/912207738598215771/997220460330758284/animais-fantasticos.png" alt="tumb animais fantasticos"></a>
+            <a href="https://github.com/KaalebCG/Animais-Fantasticos" class="projeto__link"> <img src="https://cdn.discordapp.com/attachments/912207738598215771/997220460330758284/animais-fantasticos.png" alt="tumb animais fantasticos"></a>
           </div>
-          <h3>Animais Fantasticos</h3>
+          <h3 class="card__titulo">Animais Fantasticos</h3>
           <p>Projeto desenvolvido no curso de </p>
           <p>JavaScript ES6 Completo Origamid</p>
           <p>Origamid</p>
@@ -66,18 +64,18 @@
 
         <div>
           <div class="pro">
-            <a href="https://github.com/KaalebCG/Calculadora"> <img src="https://cdn.discordapp.com/attachments/912207738598215771/979146007646453790/img-readme.png" alt="projeto calculadora javascript"></a>
+            <a href="https://github.com/KaalebCG/Calculadora"> <img src="https://cdn.discordapp.com/attachments/912207738598215771/979146007646453790/img-readme.png" alt="projeto calculadora javascript" class="projeto__link"></a>
           </div>
-          <h3>Calculadora</h3>
+          <h3 class="card__titulo">Calculadora</h3>
           <p>Projeto desenvolvido para ter um melhor</p>
           <p>entendimento com JavaScript</p>
         </div>
 
         <div>
           <div class="pro">
-            <a href="https://github.com/KaalebCG/Animais-Fantasticos"> <img src="https://media.discordapp.net/attachments/912207738598215771/997360414985822348/jogo-mario.png?width=558&height=468" alt="projeto jogo do mario"></a>
+            <a href="https://github.com/KaalebCG/Animais-Fantasticos"> <img src="https://media.discordapp.net/attachments/912207738598215771/997360414985822348/jogo-mario.png?width=558&height=468" alt="projeto jogo do mario" class="projeto__link"></a>
           </div>
-          <h3>Jogo Super Mario</h3>
+          <h3 class="card__titulo">Jogo Super Mario</h3>
           <p>Projeto criado para aperfeiçoar</p>
           <p> a linguagem JavaScript </p>
         </div>
@@ -151,7 +149,8 @@
         </div>
     </div>
   </section>
-  <section id='contatos' class="js-scroll">
+
+  <section class="js-scroll contatos">
     <h1>Contatos</h1>
     <div class="container-contatos">
       <div class="contat">
@@ -167,11 +166,17 @@
         <p>kaleb.damaceno@gmail.com</p>
       </div>
     </div>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/kaleb-damaceno/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+      <a href="https://github.com/KaalebCG" target="_blank"><img src="./img/github-icon.png" alt=""></a>
+      <a href="https://contate.me/KalebDamaceno" target="_blank"><img src="./img/whatsapp.png" alt=""></a>
+      <a href="mailto:kaleb.damaceno@gmail.com" target="_blank"><img src="./img/gmail.png" alt=""></a>
+    </div>
   </section>
-  
-  <footer>
+
+  <footer class="rodape">
     <h2> Desenvolvido por &lt;/KGD&gt;</h2>
-    <p>© Todos os direitos reservados  </p>
+    <p>© Todos os direitos reservados </p>
   </footer>
 
   <script src='./js/script.js'>  </script>

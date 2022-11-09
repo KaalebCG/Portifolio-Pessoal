@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap");
 
 body {
   font-size: 16px;
-  font-family: 'Baloo 2', cursive;
-  background-color: #282a2d;
+  font-family: "Baloo 2", cursive;
+  background: #282a2d;
   color: #a4a6a8;
 }
 
@@ -14,14 +14,14 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  background-color: #9536f6;
+  background-image: linear-gradient(#9536f6, #2b2d30);
 }
-.menu h1 {
+.menu__titulo {
   width: 130px;
   color: #fff;
 }
 
-.menu ul {
+.menu__lista {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -29,7 +29,7 @@ body {
   list-style-type: none;
 }
 
-.menu ul a {
+.menu__link {
   font-size: 1.2rem;
   line-height: 1.3;
   padding: 0px 20px;
@@ -37,7 +37,7 @@ body {
   color: #fff;
 }
 
-#home {
+.home {
   display: flex;
   justify-content: space-around;
   padding: 80px;
@@ -45,50 +45,67 @@ body {
   height: 500px;
   background-color: #2b2d30;
 }
-#home h1 {
-  font-size: 40px;
-}
+
 .cont-home {
   justify-content: center;
   margin-top: 100px;
   width: 50%;
 }
-.cont-home h1::after{
-  content: '|';
+
+.home__titulo {
+  font-size: 40px; 
+   margin: 0;
+}
+
+
+.home__titulo::after {
+  content: "|";
   margin-left: 5px;
   opacity: 1;
-  animation: pisca .8s infinite;
+  animation: pisca 0.8s infinite;
 }
-@keyframes pisca{
-  0%, 100%{
+@keyframes pisca {
+  0%,
+  100% {
     opacity: 1;
   }
-  50%{
+  50% {
     opacity: 0;
   }
 }
-#sobre {
+
+.sobre {
   display: flex;
-  height: 580px;
+  max-height: 580px;
   padding-top: 200px;
   padding-bottom: 90px;
   justify-content: space-around;
   background-color: #282a2d;
 }
+.sobre__imagem {
+  height: 27rem;
+  border-radius: 50%;
+  border: solid #9536f6;
+  transition: ease-in-out 0.3s;
+}
+.curriculo {
+  display: flex;
+  justify-content: center;
+}
 
-.content {
+.sobre__conteudo {
   max-height: 100%;
   max-width: 50%;
   justify-items: center;
 }
 
-.content h1 {
+.sobre__titulo {
   text-align: start;
   padding-top: 50px;
   flex-direction: column;
 }
 
-.content p {
+.sobre__paragrafo{
   flex-direction: column;
   text-align: start;
   font-size: 1.2rem;
@@ -96,30 +113,31 @@ body {
   max-width: 700px;
 }
 
-.profile-photo img {
+.home__imagem {
   height: 27rem;
   border-radius: 50%;
   border: solid #9536f6;
   transition: ease-in-out 0.3s;
 }
 
-#projetos {
+.projetos {
   background-color: #2b2d30;
+   padding: 100px;
 }
 
-.projetos {
-  padding: 100px;
-}
 .projetos-itens {
   margin: auto;
   max-width: 1200px;
 }
-.projetos a {
+.projetos-itens p {
+  margin: 0;
+}
+.projeto__link{
   text-align: center;
   color: #9536f6;
 }
 
-.projetos h2 {
+.projetos__titulo{
   padding-bottom: 70px;
   color: #a4a6a8;
   text-align: center;
@@ -176,7 +194,6 @@ button:hover {
   border: solid 5px #9536f6;
 }
 
-
 .pro img:hover {
   width: 300px;
 }
@@ -217,7 +234,6 @@ button:hover {
 }
 
 .escondido {
-
   display: none;
 }
 
@@ -262,19 +278,19 @@ button:hover {
 .habilidades-descricao section {
   width: 500px;
 }
-.html .ativo img{
-content: url('../img/html-5-re.png');
+.html .ativo img {
+  content: url("../img/html-5-re.png");
 }
 
-.css .ativo img{
- content: url('../img/html-5-re.png');
+.css .ativo img {
+  content: url("../img/html-5-re.png");
 }
 
-#contatos {
+.contatos {
   background-color: #2b2d30;
   height: 800px;
 }
-#contatos h1 {
+.contatos h1 {
   text-align: center;
   padding: 100px;
 }
@@ -296,8 +312,18 @@ content: url('../img/html-5-re.png');
   text-align: center;
   cursor: pointer;
 }
+.icons {
+  text-align: center;
+  padding-top: 50px;
+  display: block;
+  margin: 10px;
+}
+.icons img {
+  margin: 10px;
+  height: 50px;
+}
 
-footer {
+.rodape {
   padding: 5px 20px;
   margin: 0px auto;
   display: flex;
@@ -315,7 +341,7 @@ footer {
     flex-direction: column;
   }
 
-  #projetos {
+  .projetos {
     display: flex;
     justify-content: center;
   }
@@ -350,17 +376,14 @@ footer {
   animation: show 0.5s forwards;
 }
 
-
-.js .js-scroll{
+.js .js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
-.js .js-scroll.ativo{
+.js .js-scroll.ativo {
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
   transform: translate3d(0, 0, 0);
-
 }
