@@ -1,0 +1,42 @@
+.sobre {
+  height: 1000px;
+}
+
+.sobre__conteudo {
+  display: flex;
+  max-height: 580px;
+  padding-top: 200px;
+  padding-bottom: 90px;
+  justify-content: space-around;
+  background-color: #282a2d;
+}
+.sobre__imagem {
+  height: 27rem;
+  border-radius: 50%;
+  border: solid #9536f6;
+  transition: ease-in-out 0.3s;
+}
+.curriculo {
+  display: flex;
+  justify-content: center;
+}
+
+.sobre__informacoes {
+  max-height: 100%;
+  max-width: 50%;
+  justify-items: center;
+}
+
+.sobre__titulo {
+  text-align: start;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.sobre__paragrafo {
+  flex-direction: column;
+  text-align: start;
+  font-size: 1.2rem;
+  text-indent: 30px;
+  max-width: 700px;
+}

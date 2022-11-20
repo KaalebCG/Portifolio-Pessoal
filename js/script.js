@@ -92,23 +92,15 @@ const titulo = document.querySelector(".cont-home h1");
 
 typeWrite(titulo);
 
-
-
-function htmlColor(){
-  const imgHtml = document.querySelector(".html img");
-
-  imgHtml.setAttribute("src", "./img/css-3.png");
-
-}
-
+/*
 //TESTE PARA DEIXAR O BOTÃO 'SELECIONADO'
 
+ const iHtml = document.getElementsByClassName('htmlIcon ativo')
+ const htmlIcone = Array.from(iHtml)
+ console.log(iHtml);
 
-// const iHtml = document.getElementsByClassName('htmlIcon ativo')
-// const htmlIcone = Array.from(iHtml)
-// console.log(iHtml);
-
-// if (iHtml.length) {
-//   const imgHtml = document.querySelector(".html img");
-//   imgHtml.setAttribute("src", "./img/css-3-re.png");
-// }
+ 
+   const imgHtml = document.querySelector(".html img");
+   imgHtml.setAttribute("src", "./img/css-3-re.png");
+ 
+*/

@@ -1,0 +1,38 @@
+.habilidades {
+  max-height: 100%;
+}
+.habilidades h2 {
+  padding-bottom: 70px;
+  color: #a4a6a8;
+  text-align: center;
+  font-size: 35px;
+}
+.habilidades ul {
+  max-width: 20%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  border-right: solid 4px #9536f6;
+}
+.hab-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hab-content img {
+  cursor: pointer;
+}
+.habilidades-descricao section {
+  width: 500px;
+}
+.html .ativo img {
+  content: url("../img/html-5-re.png");
+}
+
+.css .ativo img {
+  content: url("../img/html-5-re.png");
+}
