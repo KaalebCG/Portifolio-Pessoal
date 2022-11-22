@@ -37,7 +37,7 @@
   content: url("../img/html-5-re.png");
 }
 
-@media (max-width: 361px) {
+@media (max-width: 574px) {
   .habilidades {
     padding: 0;
     width: 100%;
