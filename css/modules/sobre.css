@@ -41,9 +41,9 @@
 }
 
 @media screen and (max-width: 574px) {
-
-  .sobre{
+  .sobre {
     height: 700px;
+    width: 100%;
   }
   .sobre__imagem {
     display: none;
@@ -66,8 +66,6 @@
     padding-top: 10px;
     padding-bottom: 0;
     padding: 0;
-  justify-content:flex-start;
-
   }
   .sobre__paragrafo {
     flex-direction: column;

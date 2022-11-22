@@ -32,10 +32,11 @@
   color: rgb(49, 223, 6);
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 500px) {
   .menu {
     width: 100%;
     flex-direction: column;
+    padding: 0;
   }
   .menu__titulo {
     width: 100%;

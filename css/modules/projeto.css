@@ -114,9 +114,7 @@
   max-width: 100%;
 }
 
-
-
-@media screen and (max-width: 574px){
+@media screen and (max-width: 574px) {
   .projetos {
     text-align: center;
     display: flex;
@@ -128,20 +126,20 @@
     display: flex;
     justify-content: center;
   }
-
-  .projetos-itens {
+  .pro {
+    align-self: center;
     flex-direction: column;
   }
 
+  .projetos__card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
   .pro {
     max-width: 300px;
   }
 }
-
-
-
-
-
 
 @media (max-width: 800px) {
   .projetos {
