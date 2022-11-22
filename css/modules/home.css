@@ -14,7 +14,7 @@
 }
 
 .home__titulo {
-  font-size: 40px;
+  font-size: 4vh;
   margin: 0;
 }
 
@@ -39,4 +39,35 @@
   border-radius: 50%;
   border: solid #9536f6;
   transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 361px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-top: 10px;
+    height: 320px;
+    width: 360px;
+  }
+
+  .home__imagem {
+    height: 14vh;
+  }
+
+  .home__titulo {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .home__titulo-secundario {
+    font-size: 1em;
+  }
+
+  .cont-home {
+    justify-content: center;
+    margin-top: 30px;
+    width: 50%;
+  }
 }

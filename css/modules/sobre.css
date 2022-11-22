@@ -30,7 +30,6 @@
 .sobre__titulo {
   text-align: start;
   padding-top: 50px;
-  flex-direction: column;
 }
 
 .sobre__paragrafo {
@@ -39,4 +38,43 @@
   font-size: 1.2rem;
   text-indent: 30px;
   max-width: 700px;
+}
+
+@media screen and (max-width: 361px) {
+
+  .sobre{
+    height: 700px;
+  }
+  .sobre__imagem {
+    display: none;
+  }
+  .sobre__informacoes {
+    max-height: none;
+    max-width: none;
+    justify-items: center;
+  }
+
+  .sobre__titulo {
+    text-align: center;
+    padding-top: 20px;
+    justify-items: center;
+  }
+  .sobre__conteudo {
+    display: flex;
+    width: 100%;
+    max-height: none;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding: 0;
+  justify-content:flex-start;
+
+  }
+  .sobre__paragrafo {
+    flex-direction: column;
+    width: 300px;
+    text-align: start;
+    font-size: 1rem;
+    text-indent: 60px;
+    text-align: justify;
+  }
 }

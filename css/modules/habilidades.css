@@ -1,13 +1,13 @@
 .habilidades {
   max-height: 100%;
 }
-.habilidades h2 {
+.habilidade__titulo {
   padding-bottom: 70px;
   color: #a4a6a8;
   text-align: center;
-  font-size: 35px;
+  font-size: 1rem;
 }
-.habilidades ul {
+.habilidades-lista {
   max-width: 20%;
   max-height: 100%;
   display: flex;
@@ -26,7 +26,7 @@
 .hab-content img {
   cursor: pointer;
 }
-.habilidades-descricao section {
+.habilidades-descricao {
   width: 500px;
 }
 .html .ativo img {
@@ -37,4 +37,34 @@
   content: url("../img/html-5-re.png");
 }
 
-
+@media (max-width: 361px) {
+  .habilidades {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .habilidade__titulo {
+    font-size: 1.5rem;
+  }
+  .habilidades-lista {
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: solid 4px #9536f6;
+    padding-bottom: 40px;
+  }
+  .hab-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .habilidades-descricao {
+    text-align: center;
+    margin: 5px;
+    width: 98%;
+    height: 300px;
+  }
+  .icon {
+    width: 4rem;
+  }
+}

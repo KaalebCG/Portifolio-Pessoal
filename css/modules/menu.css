@@ -31,3 +31,24 @@
 .menu__link:hover {
   color: rgb(49, 223, 6);
 }
+
+@media screen and (max-width: 361px) {
+  .menu{
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu__titulo {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu__lista{
+    flex-direction: column;
+  }
+
+  .menu__link{
+    font-size: 1em;
+  }
+
+}
