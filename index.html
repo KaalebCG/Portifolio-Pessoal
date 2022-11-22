@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./css/modules/habilidades.css">
   <link rel="stylesheet" href="./css/modules/contato.css">
   <link rel="stylesheet" href="./css/modules/rodape.css">
+  <link rel="stylesheet" href="./css/modules/botao.css">
+
 
 
   <title>Kaleb Damaceno</title>
@@ -42,7 +44,7 @@
     <img class="home__imagem" src="./img/perfil.jpg" alt="">
   </section>
 
-  <section class="js-scroll sobre">
+  <section class="js-scroll sobre" id="sobre">
     <div class="sobre__conteudo">
       <img src="./img/icon-kaleb.png" class="sobre__imagem" alt="">
       <div class="sobre__informacoes">
@@ -53,11 +55,11 @@
       </div>
     </div>
     <div class="curriculo">
-      <a href="/img/Curriculo Kaleb Desenvolvedor.docx" download><button>Baixe meu curriculo</button></a>
+      <a href="/img/Curriculo Kaleb Desenvolvedor.docx" download><button class="botao">Baixe meu curriculo</button></a>
     </div>
   </section>
 
-  <section class="js-scroll projetos">
+  <section class="js-scroll projetos" id="projetos">
     <div class="projetos">
       <h2 class="projetos__titulo">Projetos</h2>
 
@@ -128,9 +130,9 @@
       </div>
 
 
-      <div class='hab-button'>
-        <button onclick='mostra()'>Ver mais</button>
-        <a href="https://github.com/KaalebCG?tab=repositories" target="_blank">Repositórios no github</a>
+      <div class='projetos__botoes'>
+        <button onclick='mostra()' class="botao verMais">Ver mais</button>
+        <a href="https://github.com/KaalebCG?tab=repositories" target="_blank" class="projetos__link-repositorio">Repositórios no github</a>
       </div>
     </div>
   </section>
@@ -182,7 +184,7 @@
     </div>
   </section>
 
-  <section class="js-scroll contatos">
+  <section class="js-scroll contatos" id="contatos">
     <h1>Contatos</h1>
     <div class="container-contatos">
       <div class="contat">

@@ -1,7 +1,6 @@
-
 .projetos {
   background-color: #2b2d30;
-   padding: 100px;
+  padding: 100px;
 }
 
 .projetos-itens {
@@ -11,32 +10,19 @@
 .projetos-itens p {
   margin: 0;
 }
-.projeto__link{
+.projeto__link {
   text-align: center;
   color: #9536f6;
 }
 
-.projetos__titulo{
+.projetos__titulo {
   padding-bottom: 70px;
   color: #a4a6a8;
   text-align: center;
   font-size: 35px;
 }
 
-button {
-  padding: 10px 100px;
-  border-radius: 25px;
-  cursor: pointer;
-  color: white;
-  background-color: #363636;
-  border: none;
-  transition: ease-in-out 0.3s;
-}
-
-button:hover {
-  background-color: #363636;
-}
-.hab-button {
+.projetos__botoes {
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 93px;
@@ -46,14 +32,15 @@ button:hover {
   align-items: center;
   gap: 35px;
 }
-.hab-button a {
+.projetos__link-repositorio {
   align-items: center;
+  color: white;
 }
 
-.github-link a {
-  text-decoration: none;
-  color: #9536f6;
+.projetos__link-repositorio:hover {
+  color: rgb(49, 223, 6);
 }
+
 .projetos a {
   text-decoration: none;
   display: inline;
@@ -127,8 +114,6 @@ button:hover {
   max-width: 100%;
 }
 
-
-
 @media (max-width: 800px) {
   .projetos {
     text-align: center;
@@ -144,8 +129,7 @@ button:hover {
   .projetos-itens {
     flex-direction: column;
   }
-}
-@media (max-width: 800px) {
+
   .pro {
     max-width: 300px;
   }

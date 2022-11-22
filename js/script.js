@@ -33,10 +33,15 @@ initTabNav();
 
 function mostra() {
   const escondido = document.querySelectorAll(".js-esconde");
-
+  const botao = document.querySelector(".verMais");
   escondido.forEach((index) => {
     index.classList.toggle("escondido");
   });
+  if (botao.textContent == "Ver mais") {
+    botao.textContent = "Ver menos";
+  } else {
+    botao.textContent = "Ver mais";
+  }
 }
 
 function initScrollSuave() {

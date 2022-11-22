@@ -27,3 +27,7 @@
   text-decoration: none;
   color: #fff;
 }
+
+.menu__link:hover {
+  color: rgb(49, 223, 6);
+}
