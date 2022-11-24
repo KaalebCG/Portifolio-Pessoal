@@ -51,12 +51,12 @@
     flex-wrap: wrap;
     max-width: 100%;
     border-right: none;
-    border-bottom: solid 4px #9536f6;
-    padding-bottom: 40px;
+    border-top: solid 4px #9536f6;
+    padding-top: 40px;
   }
   .hab-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .habilidades-descricao {
     text-align: center;

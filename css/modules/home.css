@@ -67,6 +67,38 @@
 
   .cont-home {
     justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-top: 10px;
+
+    width: 100%;
+  }
+
+  .home__imagem {
+    height: 30vh;
+  }
+
+  .home__titulo {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .home__titulo-secundario {
+    font-size: 1em;
+  }
+
+  .cont-home {
+    text-align: center;
     margin-top: 30px;
     width: 50%;
   }

@@ -40,7 +40,7 @@
   max-width: 700px;
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 970px) {
   .sobre {
     height: 700px;
     width: 100%;
@@ -76,3 +76,6 @@
     text-align: justify;
   }
 }
+
+
+
