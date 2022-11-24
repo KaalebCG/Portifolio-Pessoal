@@ -1,7 +1,8 @@
 .contatos {
   background-color: #2b2d30;
 }
-.contatos h1 {
+.contato__titulo {
+  font-size: 2rem;
   padding: 100px;
   text-align: center;
 }
