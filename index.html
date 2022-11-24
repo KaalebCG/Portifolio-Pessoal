@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/modules/rodape.css">
   <link rel="stylesheet" href="./css/modules/botao.css">
 
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
   <title>Kaleb Damaceno</title>
 </head>
@@ -25,13 +25,18 @@
 <body>
   <nav class='menu js-menu'>
     <h1 class="menu__titulo"> &lt; KGD &gt; </h1>
-    <ul class="menu__lista">
-      <li><a href="#home" class="menu__link">HOME</a></li>
-      <li><a href="#sobre" class="menu__link">SOBRE</a></li>
-      <li><a href="#projetos" class="menu__link">PROJETOS</a></li>
-      <li><a href="#habilidades" class="menu__link">HABILIDADES</a></li>
-      <li><a href="#contatos" class="menu__link">CONTATO</a></li>
-    </ul>
+
+
+    <span class="material-symbols-outlined " id="burguer" onclick="clickMenu()">
+      menu
+    </span>
+      <ul class="menu__lista" id="menu">
+        <li><a href="#home" class="menu__link">HOME</a></li>
+        <li><a href="#sobre" class="menu__link">SOBRE</a></li>
+        <li><a href="#projetos" class="menu__link">PROJETOS</a></li>
+        <li><a href="#habilidades" class="menu__link">HABILIDADES</a></li>
+        <li><a href="#contatos" class="menu__link">CONTATO</a></li>
+      </ul>
   </nav>
 
   <section class="js-scroll home">

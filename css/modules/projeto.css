@@ -11,27 +11,28 @@
   margin: 0;
 }
 .projeto__link {
-  text-align: center;
   color: #9536f6;
+  text-align: center;
 }
 
 .projetos__titulo {
-  padding-bottom: 70px;
   color: #a4a6a8;
-  text-align: center;
   font-size: 35px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 .projetos__botoes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 35px;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 93px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
 }
+
 .projetos__link-repositorio {
   align-items: center;
   color: white;
@@ -42,22 +43,22 @@
 }
 
 .projetos a {
-  text-decoration: none;
   display: inline;
+  text-decoration: none;
 }
 
 .pro {
+  align-items: center;
   background-color: #c4c4c4;
-  height: 195px;
-  width: 310px;
+  border: solid 5px #9536f6;
   border-radius: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
+  height: 195px;
+  justify-content: center;
   overflow: hidden;
   transition: ease-in-out 0.3s;
-  border: solid 5px #9536f6;
+  width: 310px;
 }
 
 .pro img:hover {
@@ -65,25 +66,17 @@
 }
 
 .pro p {
+  color: #c4c4c4;
   font-family: Arial, Verdana, Serif;
   font-size: 20px;
-  color: #c4c4c4;
   margin: 0;
 }
 
 .pro:hover {
-  letter-spacing: 5px;
   border: solid 5px rgb(49, 223, 6);
+  letter-spacing: 5px;
 }
 
-.pro .breve {
-  background-color: #363636;
-  width: 1000px;
-  text-align: center;
-  padding: 5% 0;
-  border-radius: 20px;
-  transform: rotate(-50deg);
-}
 .js-esconde div.escondido {
   animation: show 1s forwards;
 }
@@ -107,8 +100,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 29.5px;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 }
 .pro img {
   max-width: 100%;
@@ -116,10 +109,10 @@
 
 @media screen and (max-width: 574px) {
   .projetos {
-    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 0;
+    text-align: center;
   }
 
   .projetos {
@@ -143,9 +136,9 @@
 
 @media (max-width: 800px) {
   .projetos {
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .projetos {

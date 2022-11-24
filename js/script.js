@@ -31,6 +31,14 @@ function initTabNav() {
 
 initTabNav();
 
+function clickMenu() {
+  if (menu.style.display == "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex"
+  }
+}
+
 function mostra() {
   const escondido = document.querySelectorAll(".js-esconde");
   const botao = document.querySelector(".verMais");

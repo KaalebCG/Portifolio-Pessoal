@@ -2,8 +2,8 @@
   background-color: #2b2d30;
 }
 .contatos h1 {
-  text-align: center;
   padding: 100px;
+  text-align: center;
 }
 
 .container-contatos {
@@ -15,24 +15,24 @@
 }
 .contat {
   border: solid white 2px;
-  height: 195px;
-  width: 310px;
-  padding-top: 30px;
   border-radius: 20px;
-  display: block;
-  text-align: center;
   cursor: pointer;
+  display: block;
+  height: 195px;
+  padding-top: 30px;
+  text-align: center;
+  width: 310px;
 }
 .contat:hover {
   border: solid rgb(49, 223, 6) 2px;
 }
 .icons {
-  text-align: center;
-  padding-top: 50px;
   display: block;
   margin: 20px;
+  padding-top: 50px;
+  text-align: center;
 }
 .icons img {
-  margin: 10px;
   height: 50px;
+  margin: 10px;
 }

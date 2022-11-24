@@ -3,17 +3,17 @@
 }
 
 .sobre__conteudo {
+  background-color: #282a2d;
   display: flex;
-  max-height: 580px;
+  justify-content: space-around;
   padding-top: 200px;
   padding-bottom: 90px;
-  justify-content: space-around;
-  background-color: #282a2d;
+  max-height: 580px;
 }
 .sobre__imagem {
-  height: 27rem;
   border-radius: 50%;
   border: solid #9536f6;
+  height: 27rem;
   transition: ease-in-out 0.3s;
 }
 .curriculo {
@@ -22,22 +22,22 @@
 }
 
 .sobre__informacoes {
+  justify-items: center;
   max-height: 100%;
   max-width: 50%;
-  justify-items: center;
 }
 
 .sobre__titulo {
-  text-align: start;
   padding-top: 50px;
+  text-align: start;
 }
 
 .sobre__paragrafo {
   flex-direction: column;
-  text-align: start;
   font-size: 1.2rem;
-  text-indent: 30px;
   max-width: 700px;
+  text-align: start;
+  text-indent: 30px;
 }
 
 @media screen and (max-width: 970px) {
@@ -49,33 +49,35 @@
     display: none;
   }
   .sobre__informacoes {
+    justify-items: center;
     max-height: none;
     max-width: none;
-    justify-items: center;
   }
 
   .sobre__titulo {
-    text-align: center;
-    padding-top: 20px;
     justify-items: center;
+    padding-top: 20px;
+    text-align: center;
   }
   .sobre__conteudo {
     display: flex;
-    width: 100%;
     max-height: none;
     padding-top: 10px;
     padding-bottom: 0;
     padding: 0;
+    width: 100%;
   }
   .sobre__paragrafo {
     flex-direction: column;
-    width: 300px;
-    text-align: start;
     font-size: 1rem;
-    text-indent: 60px;
     text-align: justify;
+    text-indent: 60px;
+    width: 500px;
   }
 }
 
-
-
+@media screen and (max-width: 500px) {
+  .sobre__paragrafo {
+    width: 300px;
+  }
+}

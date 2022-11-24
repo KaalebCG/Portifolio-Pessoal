@@ -2,25 +2,25 @@
   max-height: 100%;
 }
 .habilidade__titulo {
-  padding-bottom: 70px;
   color: #a4a6a8;
-  text-align: center;
   font-size: 1rem;
+  padding-bottom: 70px;
+  text-align: center;
 }
 .habilidades-lista {
-  max-width: 20%;
-  max-height: 100%;
+  border-right: solid 4px #9536f6;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-around;
   list-style-type: none;
-  border-right: solid 4px #9536f6;
+  max-width: 20%;
+  max-height: 100%;
 }
 .hab-content {
   display: flex;
-  justify-content: center;
   gap: 40px;
+  justify-content: center;
 }
 
 .hab-content img {
@@ -39,19 +39,19 @@
 
 @media (max-width: 574px) {
   .habilidades {
-    padding: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    width: 100%;
   }
   .habilidade__titulo {
     font-size: 1.5rem;
   }
   .habilidades-lista {
-    flex-wrap: wrap;
-    max-width: 100%;
     border-right: none;
     border-top: solid 4px #9536f6;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding-top: 40px;
   }
   .hab-content {
@@ -59,10 +59,10 @@
     flex-direction: column-reverse;
   }
   .habilidades-descricao {
-    text-align: center;
-    margin: 5px;
-    width: 98%;
     height: 300px;
+    margin: 5px;
+    text-align: center;
+    width: 98%;
   }
   .icon {
     width: 4rem;
